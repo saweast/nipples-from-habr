@@ -1,0 +1,66 @@
+article, aside, figure, footer, header, hgroup,
+menu, nav, section { display: block; }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+a { color: #0066ff; }
+
+@font-face {
+    font-family: 'Furore';
+    src: url('../fonts/Furore.eot');
+    src: local('Furore'), url('../fonts/Furore.otf') format('opentype');
+}
+
+.controls {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.controls input {
+    height: 40px;
+    margin-bottom: 6px;
+}
+
+article {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.5;
+    margin: 30px 20% 0;
+}
+
+article h1 {
+    font-family: 'Furore', sans-serif;
+    font-size: 2.0em;
+    line-height: 1;
+    text-shadow: 2px 2px 0 #d3d3d3;
+}
+
+article h1 span { color: #cc0000; }
+
+article .comment { color: gray; }
+
+footer {
+    color: gray;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+}
+
+code { font-family:Courier New, monospace; }
+
+.social-links {
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+.social-links .link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 6px;
+}

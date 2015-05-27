@@ -1,0 +1,281 @@
+.body {
+    margin: 60px auto 0;
+    width: 400px;
+    height: 280px;
+    padding-top: 40px;
+    overflow: hidden;
+    position: relative;
+}
+
+.chest {
+    width: 230px;
+    margin: 0 auto;
+    height: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+.chest .left, .chest .right {
+    position: absolute;
+    top: 0;
+    width: 90px;
+    height: 40px;
+    border: 1px solid black;
+    border-bottom: none;
+    background: white;
+}
+
+.chest .left {
+    left: 0;
+    -moz-border-radius: 40px 0 0 0;
+    -webkit-border-top-left-radius: 40px;
+    border-top-left-radius: 40px;
+    -moz-transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    border-right: none;
+}
+
+.chest .right {
+    right: 0;
+    -moz-border-radius: 0 40px 0 0;
+    -webkit-border-top-right-radius: 40px;
+    border-top-right-radius: 40px;
+    -moz-transform: rotate(20deg);
+    -webkit-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    border-left: none;
+}
+
+.chest .clavicle {
+    position: absolute;
+    top: 10px;
+    height: 0;
+    width: 46px;
+    border-top: 1px solid gray;
+}
+
+.chest .left .clavicle {
+    left: 40px;
+    -moz-transform: rotate(21deg);
+    -webkit-transform: rotate(21deg);
+    -o-transform: rotate(21deg);
+}
+.chest .right .clavicle {
+    right: 40px;
+    -moz-transform: rotate(-21deg);
+    -webkit-transform: rotate(-21deg);
+    -o-transform: rotate(-21deg);
+}
+
+.breast {
+    width: 222px;
+    height: 40px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.breast .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    float: left;
+}
+
+.breast .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    float: right;
+}
+
+.breast .between {
+    margin: 0 auto;
+    width: 1px;
+    height: 26px;
+    border-right: 1px solid #d3d3d3;
+    position: relative;
+    top: -26px;
+}
+
+.breast .boob {
+    border: 1px solid black;
+    border-top: none;
+    -moz-border-radius: 0 0 60px 60px;
+    -webkit-border-bottom-right-radius: 60px;
+    -webkit-border-bottom-left-radius: 60px;
+    border-radius: 0 0 60px 60px;
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    width: 100px;
+    height: 56px;
+    padding: 0;
+    margin: 0;
+    background: white;
+    cursor: pointer;
+}
+
+.breast .right .boob {
+    -moz-transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -o-transform: rotate(-15deg);
+}
+
+.breast .boob li {
+    margin: 0 auto;
+    padding: 18px 0 0;
+    font-size: 40px;
+    line-height: 20px;
+    width: 20px;
+    height: 20px;
+    list-style-position: inside;
+    color: #ff9999;
+    content: '\A0'
+}
+
+.size-1 { width: 172px; }
+.size-1 .boob {
+    width: 70px;
+    height: 30px;
+    -moz-border-radius-bottomright: 35px 30px;
+    -moz-border-radius-bottomleft: 35px 30px;
+    /*-moz-border-bottom-right-radius: 35px 30px;*/
+    /*-moz-border-bottom-left-radius: 35px 30px;*/
+    -webkit-border-bottom-right-radius: 35px 30px;
+    -webkit-border-bottom-left-radius: 35px 30px;
+    border-bottom-right-radius: 35px 30px;
+    border-bottom-left-radius: 35px 30px;
+}
+.size-1 .boob li { font-size: 25px; padding-top: 5px; width: 10px; }
+
+.size-2 { width: 190px; }
+.size-2 .boob { width: 80px; height: 40px; }
+.size-2 .boob li { font-size: 30px; padding-top: 10px; }
+
+.size-3 { width: 206px; }
+.size-3 .boob { width: 90px; height: 52px; }
+.size-3 .boob li { font-size: 35px; padding-top: 15px; }
+
+.size-4 {}
+.size-4 .boob {}
+.size-4 .boob li {}
+
+.size-5 { width: 250px; }
+.size-5 .boob {
+    width: 110px;
+    height: 70px;
+    -moz-transform: rotate(28deg);
+    -webkit-transform: rotate(28deg);
+    -o-transform: rotate(28deg);
+}
+.size-5 .boob li { padding-top: 30px; }
+.size-5 .right .boob {
+    -moz-transform: rotate(-28deg);
+    -webkit-transform: rotate(-28deg);
+    -o-transform: rotate(-28deg);
+}
+
+.belly {
+    width: 180px;
+    height: 180px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    top: -30px;
+}
+
+.belly .left, .belly .right {
+    position: absolute;
+    top: -75px;
+    height: 260px;
+    width: 130px;
+    border-style: solid;
+    border-color: black;
+}
+
+.belly .left {
+    left: -105px;
+    border-width: 1px 1px 1px 0;
+    -moz-border-radius: 0 130px 130px 0;
+    -webkit-border-top-right-radius: 130px;
+    -webkit-border-bottom-right-radius: 130px;
+    border-radius: 0 130px 130px 0;
+}
+
+.belly .right {
+    right: -105px;
+    border-width: 1px 0 1px 1px;
+    -moz-border-radius: 130px 0 0 130px;
+    -webkit-border-top-left-radius: 130px;
+    -webkit-border-bottom-left-radius: 130px;
+    border-radius: 130px 0 0 130px;
+}
+
+.belly .hide-top, .belly .hide-bottom {
+    position: absolute;
+    left: -1px;
+    width: 111%;
+    height: 60px;
+    background: white;
+}
+.belly .hide-top { top: -1px; }
+.belly .hide-bottom { bottom: -1px; }
+
+.belly .button {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.thigh {
+    width: 230px;
+    height: 40px;
+    position: relative;
+    top: -79px;
+    z-index: 2;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.thigh .left, .thigh .right {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-color: black;
+    position: relative;
+    background: white;
+}
+
+.thigh .left {
+    border-width: 1px 0 0 1px;
+    -moz-border-radius: 70px 0 0 0;
+    -webkit-border-top-left-radius: 70px;
+    border-top-left-radius: 70px;
+    -moz-transform: rotate(-40deg);
+    -webkit-transform: rotate(-40deg);
+    -o-transform: rotate(-40deg);
+    float: left;
+}
+
+.thigh .right {
+    border-width: 1px 1px 0 0;
+    -moz-border-radius: 0 70px 0  0;
+    -webkit-border-top-right-radius: 70px;
+    border-top-right-radius: 70px;
+    -moz-transform: rotate(40deg);
+    -webkit-transform: rotate(40deg);
+    -o-transform: rotate(40deg);
+    float: right;
+}
+
+.thigh .hide-bottom {
+    position: absolute;
+    left: -1px;
+    bottom: -1px;
+    width: 111%;
+    height: 68px;
+    background: white;
+}
+
+.clear { clear: both; }
